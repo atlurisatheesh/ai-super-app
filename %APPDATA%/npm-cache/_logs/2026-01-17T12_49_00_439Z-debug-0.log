@@ -1,0 +1,41 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.20.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\ai-super-app-main\.npmrc
+5 silly config load:file:C:\Users\atlur\.npmrc
+6 silly config load:file:D:\ai-super-app-main\%APPDATA%\npm\etc\npmrc
+7 verbose title npm exec create-next-app@latest frontend
+8 verbose argv "exec" "--" "create-next-app@latest" "frontend"
+9 verbose logfile logs-max:10 dir:D:\ai-super-app-main\%APPDATA%\npm-cache\_logs\2026-01-17T12_49_00_439Z-
+10 verbose logfile D:\ai-super-app-main\%APPDATA%\npm-cache\_logs\2026-01-17T12_49_00_439Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 http fetch GET 200 https://registry.npmjs.org/npm 794ms
+14 http fetch GET 200 https://registry.npmjs.org/create-next-app 953ms (cache miss)
+15 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+16 verbose stack Error: ENOENT: no such file or directory, lstat 'D:\ai-super-app-main\%APPDATA%\npm'
+16 verbose stack     at async lstat (node:internal/fs/promises:1015:18)
+16 verbose stack     at async #loadActual (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\load-actual.js:112:20)
+16 verbose stack     at async exec (C:\Program Files\nodejs\node_modules\npm\node_modules\libnpmexec\lib\index.js:207:26)
+16 verbose stack     at async Npm.exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:207:9)
+16 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+17 error code ENOENT
+18 error syscall lstat
+19 error path D:\ai-super-app-main\%APPDATA%\npm
+20 error errno -4058
+21 error enoent ENOENT: no such file or directory, lstat 'D:\ai-super-app-main\%APPDATA%\npm'
+22 error enoent This is related to npm not being able to find a file.
+22 error enoent
+23 verbose cwd D:\ai-super-app-main
+24 verbose os Windows_NT 10.0.26200
+25 verbose node v20.20.0
+26 verbose npm  v10.8.2
+27 notice
+27 notice New [31mmajor[39m version of npm available! [31m10.8.2[39m -> [34m11.7.0[39m
+27 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.7.0[39m
+27 notice To update run: [4mnpm install -g npm@11.7.0[24m
+27 notice  { force: true, [Symbol(proc-log.meta)]: true }
+28 verbose exit -4058
+29 verbose code -4058
+30 error A complete log of this run can be found in: D:\ai-super-app-main\%APPDATA%\npm-cache\_logs\2026-01-17T12_49_00_439Z-debug-0.log
