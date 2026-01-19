@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from app.models.schemas import ChatReq, ChatRes
-from app.core.safety import legal
-from app.core.router import run
+from models.schemas import ChatReq, ChatRes
+from core.safety import legal
+from core.router import run
 
 router = APIRouter(prefix="/api/live", tags=["Live"])
 

@@ -1,8 +1,8 @@
 from fastapi import APIRouter
-from app.models.schemas import CanvaReq
-from app.services.pdf import html_to_pdf
-from app.prompts.canva import prompt
-from app.services.llm import ask
+from models.schemas import CanvaReq
+from services.pdf import html_to_pdf
+from prompts.canva import prompt
+from services.llm import ask
 
 router = APIRouter()
 

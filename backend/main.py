@@ -7,7 +7,7 @@ from slowapi.middleware import SlowAPIMiddleware
 from fastapi.responses import JSONResponse
 from openai import OpenAI
 
-from app.api import chat, live, dev, creative, image  # ✅ image added
+from api import chat, live, dev, creative, image  # ✅ image added
 client = OpenAI()
 app = FastAPI(title="AI Super App")
 
@@ -41,11 +41,11 @@ app.include_router(image.router)   # ✅ image router added
 @app.get("/")
 def health():
     return {"status": "ok"}
-@app.post("/image")
-def generate_image(prompt: str):
-    result = client.images.generate(
-        model="gpt-image-1",
-        prompt=prompt,
-        size="1024x1024"
-    )
-    return {"url": result.data[0].url}
+# @app.post("/image")
+# def generate_image(prompt: str):
+#     result = client.images.generate(
+#         model="gpt-image-1",
+#         prompt=prompt,
+#         size="1024x1024"
+#     )
+#     return {"url": result.data[0].url}
