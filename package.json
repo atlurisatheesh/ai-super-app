@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "electron": "^40.0.0",
     "pdfjs-dist": "^5.4.530"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.9"
   }
 }
